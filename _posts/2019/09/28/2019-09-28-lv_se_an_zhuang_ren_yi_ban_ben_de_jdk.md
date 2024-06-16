@@ -4,7 +4,7 @@ date: 2019-09-28 13:57:00 +0800
 last_modified_at: 2021-09-25 15:24:10 +0800
 math: true
 render_with_liquid: false
-categories: ["程序人生", "Java"]
+categories: ["操作系统", "macOS"]
 tags: ["linux", "java", "jdk"]
 description: "很多小白在安装 JDK 的时候，总会遇到各种各样的问题，在这里推荐一种不容易出错的 “安装” 方法：二进制。总的来说只有两步：1. 下载并解压 2. 配置环境变量"
 ---
