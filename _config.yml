@@ -62,13 +62,13 @@ analytics:
   goatcounter:
     id: "jbz9p8rb" # fill in your GoatCounter ID
   umami:
-    id: # fill in your Umami ID
-    domain: # fill in your Umami domain
+    id: "15d243ca-0b5d-4059-a046-afb984fa90c6"
+    domain: "https://u.lucien.ink"
   matomo:
     id: # fill in your Matomo ID
     domain: # fill in your Matomo domain
   cloudflare:
-    id: # fill in your Cloudflare Web Analytics token
+    id: "40ca466053ee43c28ac366657d43423e"
 
 # Pageviews settings
 pageviews:
