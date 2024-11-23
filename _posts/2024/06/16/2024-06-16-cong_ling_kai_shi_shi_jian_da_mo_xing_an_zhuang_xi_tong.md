@@ -1,7 +1,7 @@
 ---
 title: "从零开始实践大模型 - 安装系统"
 date: 2024-06-16 23:29:00 +0800
-last_modified_at: 2024-06-16 23:33:44 +0800
+last_modified_at: 2024-06-23 22:48:23 +0800
 math: false
 render_with_liquid: false
 categories: ["操作系统", "Linux"]
@@ -29,13 +29,13 @@ description: "该文建议安装无图形界面的 Debian Linux 作为深度学�
 
 ### 启动页面
 
-![install_method]
+![Installer menu][install_method]
 
 ### 语言
 
 在这里 **强烈不推荐** 选择中文，除非你准备好应对各种因中文字符而产生的问题。
 
-![language][language]
+![Select a language][language]
 
 ### 地区
 
@@ -43,71 +43,71 @@ description: "该文建议安装无图形界面的 Debian Linux 作为深度学�
 + 可以在这里先选择 `United States` 然后进入系统后再更改。
 + 也可以直接去 `other` 里找 `Asia` 然后 `China`。
 
-![location_other][location_other]
-![location_aisa][location_aisa]
-![location_china][location_china]
+![Select location other][location_other]
+![Select Region][location_aisa]
+![Select territory or area][location_china]
 
 ### 编码
 
 一律选 `en_US.UTF-8`，可以规避很多潜在的问题。
 
-![locales][locales]
+![Configure locales][locales]
 
 ### 键盘布局
 
-![keymap][keymap]
+![Configure the keyboard][keymap]
 
 ### 主机名 & 域名
 
 如果只是单台服务器的话，这里随便填就好。
 如果打算组建集群，这里就直接起个 node-0 之类的遍于自己区分的名字就好。
 
-![hostname][hostname]
-![domain][domain]
+![The hostname for this system][hostname]
+![Domain name][domain]
 
 ### 设定用户 & 密码
 
-![root_pass][root_pass]
-![normal_user][normal_user]
+![Set up root password][root_pass]
+![Set up normal user][normal_user]
 
 ### 硬盘分区
 
 推荐直接用一整块硬盘，不启用 LVM 和加密。
 
-![partition_disk][partition_disk]
-![select_dist][select_dist]
-![partition_scheme][partition_scheme]
-![disk_part_checkout][disk_part_checkout]
-![verify_disk_part][verify_disk_part]
+![Partition disks][partition_disk]
+![Select disk][select_disk]
+![Partition Scheme][partition_scheme]
+![Disk_part Checkout][disk_part_checkout]
+![Verify disk part][verify_disk_part]
 
 ### 配置 apt
 
 在这里选择国内的镜像，否则会很慢。
 
-![extra_media][extra_media]
-![apt_china][apt_china]
-![apt_tuna][apt_tuna]
-![apt_proxy][apt_proxy]
+![Extra media][extra_media]
+![APT China][apt_china]
+![APT Tuna mirror][apt_tuna]
+![APT HTTP Proxy][apt_proxy]
 
 ### 是否参与数据采集
 
-![survey][survey]
+![Survey][survey]
 
 ### 选择预装软件
 
 在这里只选择 SSH 和基础工具就好，没有特殊需求不建议勾选图形化界面（Debian desktop environment）。
 
-![software_selection][software_selection]
+![Software Selection][software_selection]
 
 ### 安装引导
 
-![grub][grub]
-![choose_grub_device][choose_grub_device]
+![GRUB][grub]
+![Choose Grub Device][choose_grub_device]
 
 ### 重启进入系统
 
-![complete][complete]
-![bootloader][bootloader]
+![Complete][complete]
+![Bootloader][bootloader]
 
 [this]: https://blog.lucien.ink/archives/548/
 [download_url]: https://www.debian.org/distrib/netinst
@@ -123,7 +123,7 @@ description: "该文建议安装无图形界面的 Debian Linux 作为深度学�
 [root_pass]: https://cdn.jsdelivr.net/gh/LucienShui/assets@main/img/2024/06/16/SCR-20240616-epmm.png
 [normal_user]: https://cdn.jsdelivr.net/gh/LucienShui/assets@main/img/2024/06/16/SCR-20240616-epnr.png
 [partition_disk]: https://cdn.jsdelivr.net/gh/LucienShui/assets@main/img/2024/06/16/SCR-20240616-eprx.png
-[select_dist]: https://cdn.jsdelivr.net/gh/LucienShui/assets@main/img/2024/06/16/SCR-20240616-eptx.png
+[select_disk]: https://cdn.jsdelivr.net/gh/LucienShui/assets@main/img/2024/06/16/SCR-20240616-eptx.png
 [partition_scheme]: https://cdn.jsdelivr.net/gh/LucienShui/assets@main/img/2024/06/16/SCR-20240616-epuv.png
 [disk_part_checkout]: https://cdn.jsdelivr.net/gh/LucienShui/assets@main/img/2024/06/16/SCR-20240616-epvv.png
 [verify_disk_part]: https://cdn.jsdelivr.net/gh/LucienShui/assets@main/img/2024/06/16/SCR-20240616-epxd.png
