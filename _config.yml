@@ -16,7 +16,7 @@ timezone: "Asia/Shanghai"
 
 title: "Lucien's Blog" # the main title
 
-tagline: "八苦，八苦。" # it will display as the sub-title
+tagline: "八苦，八苦。" # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   因为孤独是人之常态，所以陪伴才显得尤为珍贵。
@@ -26,10 +26,11 @@ description: >- # used by seo meta and the atom feed
 url: "https://lucienshui.github.io"
 
 github:
-  username: "LucienShui" # change to your github username
+  username: "LucienShui" # change to your GitHub username
 
 twitter:
-  username: "LucienShui" # change to your twitter username
+  username: "LucienShui" # change to your Twitter username
+
 
 social:
   # Change to your full name.
@@ -38,7 +39,7 @@ social:
   email: "lucien@lucien.ink" # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - "https://github.com/LucienShui" # change to your github homepage
+    - "https://github.com/LucienShui" # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -69,8 +70,10 @@ analytics:
     domain: # fill in your Matomo domain
   cloudflare:
     id: "40ca466053ee43c28ac366657d43423e"
+  fathom:
+    id: # fill in your Fathom Site ID
 
-# Pageviews settings
+# Page views settings
 pageviews:
   provider: "goatcounter" # now only supports 'goatcounter'
 
@@ -82,8 +85,8 @@ pageviews:
 #
 # Available options:
 #
-#     light  - Use the light color scheme
-#     dark   - Use the dark color scheme
+#     light — Use the light color scheme
+#     dark — Use the dark color scheme
 #
 theme_mode: # [light | dark]
 
@@ -135,9 +138,9 @@ assets:
     env: # [development | production]
 
 pwa:
-  enabled: true # the option for PWA feature (installable)
+  enabled: true # The option for PWA feature (installable)
   cache:
-    enabled: true # the option for PWA offline cache
+    enabled: true # The option for PWA offline cache
     # Paths defined here will be excluded from the PWA cache.
     # Usually its value is the `baseurl` of another website that
     # shares the same domain name as the current website.
@@ -189,10 +192,6 @@ defaults:
     values:
       layout: page
       permalink: /:title/
-  - scope:
-      path: assets/js/dist
-    values:
-      swcache: true
 
 sass:
   style: compressed
