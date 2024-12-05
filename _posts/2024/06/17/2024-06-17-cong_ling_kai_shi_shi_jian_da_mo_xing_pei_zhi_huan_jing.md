@@ -1,7 +1,7 @@
 ---
 title: "从零开始实践大模型 - 配置环境"
 date: 2024-06-17 14:45:00 +0800
-last_modified_at: 2024-11-23 22:38:12 +0800
+last_modified_at: 2024-12-05 23:32:06 +0800
 math: true
 render_with_liquid: false
 categories: ["机器学习"]
@@ -86,7 +86,7 @@ reboot
 
 ### 下载驱动
 
-前往 [Official Drivers | NVIDIA][download_driver] 下载显卡驱动，请注意，CUDA Toolkit 不要选 `Any`，否则会获得一个十分旧的驱动，会影响 nvidia docker (CUDA >= 11.6) 的安装。
+前往 [Official Drivers \| NVIDIA][download_driver] 下载显卡驱动，请注意，CUDA Toolkit 不要选 `Any`，否则会获得一个十分旧的驱动，会影响 nvidia docker (CUDA >= 11.6) 的安装。
 
 对于大部分服务器来说，操作系统选 `Linux 64-bit`，语言推荐选 `English (US)`。CUDA Toolkit 笔者在这里选择 `12.4` 版本，得到的下载链接为：[NVIDIA-Linux-x86_64-550.90.07.run][driver_link]，下载到服务器上即可。
 
@@ -221,7 +221,7 @@ docker run --rm --gpus all nvidia/cuda:11.6.2-base-ubuntu20.04 nvidia-smi
 
 ### Docker rootless mode
 
-> [Rootless mode | Docker Docs][docker_rootless_mode]
+> [Rootless mode \| Docker Docs][docker_rootless_mode]
 
 在这里假设我们要用的用户名为 foo。对于 rootless 而言，需要先用 root 做一些配置：
 
@@ -350,7 +350,7 @@ python3 -c 'import torch; print(torch.tensor(0).cuda())'
 + [Debian 软件源 - 清华大学开源软件镜像站][tuna_debian]
 + [Debian 下 CUDA 生产环境配置笔记 - Lucien's Blog][debian_cuda]
 + [nouveau - 维基百科][nouveau_wiki]
-+ [Official Drivers | NVIDIA][download_driver]
++ [Official Drivers \| NVIDIA][download_driver]
 + [fabric-manager-user-guide.pdf][fabric_manager_user_guide]
 + [Download Installer for Linux Debian 12 x86_64][debian_deb_driver]
 + [nvidia-persistenced 常驻][persistence_mode_blog]
@@ -359,7 +359,7 @@ python3 -c 'import torch; print(torch.tensor(0).cuda())'
 + [Miniconda - Anaconda document][conda_page]
 + [Anaconda 镜像使用帮助 - 清华大学开源软件镜像站][tuna_conda_mirror]
 + [PyPI 镜像使用帮助 - 清华大学开源软件镜像站][tuna_pypi_mirror]
-+ [Rootless mode | Docker Docs][docker_rootless_mode]
++ [Rootless mode \| Docker Docs][docker_rootless_mode]
 
 [this]: https://blog.lucien.ink/archives/549/
 [pasteme]: https://pasteme.cn
