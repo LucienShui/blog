@@ -1,7 +1,7 @@
 ---
 title: "从零开始实践大模型 - 配置环境"
 date: 2024-06-17 14:45:00 +0800
-last_modified_at: 2024-12-05 23:32:06 +0800
+last_modified_at: 2025-01-04 14:03:06 +0800
 math: true
 render_with_liquid: false
 categories: ["机器学习"]
@@ -267,7 +267,7 @@ ${HOME}/.local/miniconda3/bin/conda init
 > [Anaconda 镜像使用帮助][tuna_conda_mirror]
 
 ```shell
-mv "${HOME}/.local/miniconda3/.condarc" "${HOME}/.local/miniconda3/.condarc.bak"  # 新版 conda 会在这里新建全局 .condarc
+mv "${HOME}/.local/miniconda3/.condarc" "${HOME}/.local/miniconda3/.condarc.bak"
 cat << EOF > ~/.condarc
 channels:
   - defaults
