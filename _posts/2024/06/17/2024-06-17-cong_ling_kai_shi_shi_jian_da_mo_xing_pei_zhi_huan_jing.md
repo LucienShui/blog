@@ -267,25 +267,22 @@ ${HOME}/.local/miniconda3/bin/conda init
 > [Anaconda 镜像使用帮助][tuna_conda_mirror]
 
 ```shell
-conda config --set show_channel_urls yes 
-cat << EOF >> ~/.condarc
+mv "${HOME}/.local/miniconda3/.condarc" "${HOME}/.local/miniconda3/.condarc.bak"  # 新版 conda 会在这里新建全局 .condarc
+cat << EOF > ~/.condarc
 channels:
   - defaults
+show_channel_urls: true
 default_channels:
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2
 custom_channels:
   conda-forge: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
-  msys2: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
-  bioconda: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
-  menpo: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
   pytorch: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
-  pytorch-lts: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
-  simpleitk: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
-  deepmodeling: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/
 EOF
 ```
+
+重新登陆以后可以看到，已经有 conda 环境了。
 
 ### 配置 pypi 镜像
 
